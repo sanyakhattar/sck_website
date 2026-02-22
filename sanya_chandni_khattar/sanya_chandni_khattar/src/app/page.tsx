@@ -1,4 +1,17 @@
+"use client" //shadcn
+import * as React from "react";
 import Image from "next/image";
+
+
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu"
+
 
 export default function Home() {
   return (
@@ -20,7 +33,7 @@ export default function Home() {
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://drive.google.com/file/d/1GjvFF35E3KaEkas8dHMd1W0vT21fe-7M/view?usp=sharing"
+          href="https://drive.google.com/file/d/1uMEkzHOBtNe1tCL-suchGMDLDS0-urrY/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -64,6 +77,29 @@ export default function Home() {
           Linkedin
         </a>
       </footer>
+
+      <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>navbar</NavigationMenuTrigger>
+          
+          <NavigationMenuContent>
+            <NavigationMenuItem>
+              <NavigationMenuLink>about</NavigationMenuLink>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink>projects</NavigationMenuLink>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink>connect!</NavigationMenuLink>
+            </NavigationMenuItem>
+          </NavigationMenuContent>
+
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
     </div>
   );
 }
