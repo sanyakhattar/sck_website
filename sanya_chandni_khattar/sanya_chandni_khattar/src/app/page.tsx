@@ -1,7 +1,7 @@
 "use client" //shadcn
 import * as React from "react";
 import Image from "next/image";
-
+import { Home as HomeIcon } from "lucide-react";
 
 import {
   NavigationMenu,
@@ -12,13 +12,17 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
-
+/*
+<NavigationMenuItem>
+  <NavigationMenuLink href = "/projects">projects</NavigationMenuLink>
+</NavigationMenuItem>*/
+        
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Nav bar */}
       <nav className="w-full border-b border-border px-4 py-3 sm:px-8">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-5xl flex items-center justify-between">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -28,15 +32,19 @@ export default function Home() {
                     <NavigationMenuLink href = "/experience">experience</NavigationMenuLink>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuLink href = "/projects">projects</NavigationMenuLink>
-                  </NavigationMenuItem>
-                  <NavigationMenuItem>
                     <NavigationMenuLink href = "/connect">connect!</NavigationMenuLink>
                   </NavigationMenuItem>
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+          <a
+            href="/"
+            className="rounded-lg p-2 text-foreground/70 transition-colors hover:bg-accent hover:text-foreground"
+            aria-label="Home"
+          >
+            <HomeIcon size={20} />
+          </a>
         </div>
       </nav>
 
