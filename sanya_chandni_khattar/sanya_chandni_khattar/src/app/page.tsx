@@ -25,13 +25,13 @@ export default function Home() {
                 <NavigationMenuTrigger>navbar</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <NavigationMenuItem>
-                    <NavigationMenuLink>experience</NavigationMenuLink>
+                    <NavigationMenuLink href = "/experience">experience</NavigationMenuLink>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuLink>projects</NavigationMenuLink>
+                    <NavigationMenuLink href = "/projects">projects</NavigationMenuLink>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuLink>connect!</NavigationMenuLink>
+                    <NavigationMenuLink href = "/connect">connect!</NavigationMenuLink>
                   </NavigationMenuItem>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -47,7 +47,7 @@ export default function Home() {
         <div className="space-y-2 mb-8">
           <p>Hi! I&apos;m Sanya.</p>
           <p>I&apos;m currently a second-semester senior studying Computer Science at the <u>University of Southern California</u>.</p>
-          <p>My favorite classes have been: <span title="CSCI 353/EE 450" className="underline decoration-dotted cursor-help">Computer Networks</span>, <span title="CSCI 356" className="underline decoration-dotted cursor-help">Computer Systems</span>, and my <span title="CSCI 401" className="underline decoration-dotted cursor-help">Software Engineering capstone</span>.</p>
+          <p>My favorite classes have been: <span title="CSCI 353/EE 450" className="underline decoration-dotted cursor-help">Computer Networks</span>, <span title="CSCI 356" className="underline decoration-dotted cursor-help">Computer Systems</span>, and my technical elective for <span title="TAC 435" className="underline decoration-dotted cursor-help">Professional C++</span>.</p>
           <p>When I&apos;m not building through programming, you can find me making music, playing with my pets, reading, and swimming!</p>
         </div>
 
