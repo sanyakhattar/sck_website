@@ -17,6 +17,13 @@ export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <h1>About
+        <p>Hi! I'm Sanya.</p>
+        <p>I'm currently a second-semester senior studying Computer Science at the <u>University of Southern California</u>.</p>
+        <p>My favorite classes have been: Computer Networks, Computer Systems, and my Software Engineering capstone.</p>
+        <p>When I'm not building through programming, you can find me making music, playing with my pets, reading, and swimming!</p>
+        </h1>
+        
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Current working directory:{" "}
