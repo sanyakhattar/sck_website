@@ -2,13 +2,21 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant light (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Pastel card colors from the reference palette */
+  --color-pastel-green: oklch(0.88 0.08 145);
+  --color-pastel-lavender: oklch(0.85 0.07 300);
+  --color-pastel-pink: oklch(0.88 0.06 10);
+  --color-pastel-yellow: oklch(0.92 0.08 95);
+  --color-pastel-peach: oklch(0.88 0.06 60);
+  --color-pastel-sky: oklch(0.88 0.06 230);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -48,38 +56,58 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.147 0.004 49.25);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.147 0.004 49.25);
-  --primary: oklch(0.216 0.006 56.043);
-  --primary-foreground: oklch(0.985 0.001 106.423);
-  --secondary: oklch(0.97 0.001 106.424);
-  --secondary-foreground: oklch(0.216 0.006 56.043);
-  --muted: oklch(0.97 0.001 106.424);
-  --muted-foreground: oklch(0.553 0.013 58.071);
-  --accent: oklch(0.97 0.001 106.424);
-  --accent-foreground: oklch(0.216 0.006 56.043);
+  --radius: 0.75rem;
+
+  /* Warm cream/beige background inspired by the reference */
+  --background: oklch(0.96 0.015 85);        /* warm cream */
+  --foreground: oklch(0.25 0.02 55);          /* dark warm brown */
+
+  /* Cards: slightly lighter cream */
+  --card: oklch(0.97 0.012 90);              /* light warm white */
+  --card-foreground: oklch(0.25 0.02 55);
+
+  --popover: oklch(0.97 0.012 90);
+  --popover-foreground: oklch(0.25 0.02 55);
+
+  /* Primary: warm dark brown */
+  --primary: oklch(0.30 0.03 55);
+  --primary-foreground: oklch(0.96 0.015 85);
+
+  /* Secondary: warm light beige */
+  --secondary: oklch(0.93 0.02 85);
+  --secondary-foreground: oklch(0.30 0.03 55);
+
+  /* Muted: soft warm gray */
+  --muted: oklch(0.93 0.015 80);
+  --muted-foreground: oklch(0.55 0.02 55);
+
+  /* Accent: slightly peachy warm tone */
+  --accent: oklch(0.92 0.025 75);
+  --accent-foreground: oklch(0.30 0.03 55);
+
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.923 0.003 48.717);
-  --input: oklch(0.923 0.003 48.717);
-  --ring: oklch(0.709 0.01 56.259);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0.001 106.423);
-  --sidebar-foreground: oklch(0.147 0.004 49.25);
-  --sidebar-primary: oklch(0.216 0.006 56.043);
-  --sidebar-primary-foreground: oklch(0.985 0.001 106.423);
-  --sidebar-accent: oklch(0.97 0.001 106.424);
-  --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
-  --sidebar-border: oklch(0.923 0.003 48.717);
-  --sidebar-ring: oklch(0.709 0.01 56.259);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.147 0.004 49.25);
+
+  /* Borders: very subtle warm gray */
+  --border: oklch(0.90 0.015 80);
+  --input: oklch(0.90 0.015 80);
+  --ring: oklch(0.70 0.04 85);
+
+  /* Pastel chart colors matching the card palette in the reference */
+  --chart-1: oklch(0.80 0.10 145);           /* sage green */
+  --chart-2: oklch(0.78 0.08 300);           /* lavender */
+  --chart-3: oklch(0.82 0.08 25);            /* soft pink/coral */
+  --chart-4: oklch(0.88 0.10 95);            /* muted yellow */
+  --chart-5: oklch(0.75 0.10 200);           /* soft teal */
+
+  /* Sidebar: slightly lighter than main bg */
+  --sidebar: oklch(0.97 0.012 85);
+  --sidebar-foreground: oklch(0.25 0.02 55);
+  --sidebar-primary: oklch(0.30 0.03 55);
+  --sidebar-primary-foreground: oklch(0.97 0.012 85);
+  --sidebar-accent: oklch(0.94 0.02 85);
+  --sidebar-accent-foreground: oklch(0.30 0.03 55);
+  --sidebar-border: oklch(0.91 0.015 80);
+  --sidebar-ring: oklch(0.70 0.04 85);
 }
 
 .dark {
@@ -116,11 +144,11 @@
   --sidebar-ring: oklch(0.553 0.013 58.071);
 }
 
-@layer base {
+/*@layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
   }
-}
+}*/
