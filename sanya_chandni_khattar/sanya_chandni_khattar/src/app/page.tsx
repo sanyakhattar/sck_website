@@ -56,7 +56,7 @@ export default function Home() {
           <p>Hi! I&apos;m Sanya.</p>
           <p>I&apos;m currently a second-semester senior studying Computer Science at the <u>University of Southern California</u>.</p>
           <p>My favorite classes have been: <span title="CSCI 353/EE 450" className="underline decoration-dotted cursor-help">Computer Networks</span>, <span title="CSCI 356" className="underline decoration-dotted cursor-help">Computer Systems</span>, and my technical elective for <span title="TAC 435" className="underline decoration-dotted cursor-help">Professional C++</span>.</p>
-          <p>When I&apos;m not building through programming, you can find me making music, playing with my pets, reading, and swimming!</p>
+          <p>When I&apos;m not building through programming, you can find me making music, playing with my pets, reading, or outdoors!</p>
         </div>
 
         <ol className="font-mono list-inside list-decimal text-sm/6 mb-10">
@@ -75,9 +75,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <a
             className="bg-pastel-green p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
-            href="https://drive.google.com/file/d/1uMEkzHOBtNe1tCL-suchGMDLDS0-urrY/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
+            href = "/resume"
           >
             <Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} />
             Resume

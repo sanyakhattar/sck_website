@@ -45,13 +45,34 @@ export default function Connect() {
     
     {/* Centered main content */}     
         <main className = "mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-8">
-            <h1 className = "text-3xl font-bold mb-4">Resume</h1>
+            <h1 className = "text-4xl font-bold mb-4">Resume</h1>
 
-             {/* Responsive card grid */}
-                    <div className="grid grid-rows-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                       
+            <div className = "experience text-3xl font-semibold mb-4">Experience</div>
+
+            <div className = "experience-container">
+                <div className = "chrono-experience text-2xl">USC Interaction Lab</div>
+                    <div className = "exp-time text-1xl">August 2024 - December 2025</div>
+                    <div className = "role(s)">
+                        <ol className = "list-inside list-decimal text-l/6 mb-6">
+                            <li>Full-stack Software Developer | May 2025 - August 2025</li>
+                            <li>Undergraduate Research Assistant, USC CURVE Fellowship | Aug. 2024 - May 2025</li>
+                        </ol>
                     </div>
-        
+            </div>
+
+            <div className = "experience-container">
+            <div className = "chrono-experience text-2xl">Meyer Sound Laboratories, Incorporated</div>
+                <div className = "exp-time text-1xl">May - December 2024</div>
+                <div className = "role(s)">
+                    <ol className = "list-inside list-decimal text-l/6 mb-6">
+                        <li>Information Systems and Technology Intern</li>
+                        <li>Research and Development (R&D) Intern</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div className = "projects text-3xl font-semibold mb-4">Projects</div>
+            
         </main>   
     </div>
   );
