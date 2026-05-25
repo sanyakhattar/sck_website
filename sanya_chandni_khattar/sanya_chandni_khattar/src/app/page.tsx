@@ -17,7 +17,8 @@ import {
   <NavigationMenuLink href = "/projects">projects</NavigationMenuLink>
 </NavigationMenuItem>*/
         
-export default function Home() {
+export default function Home() 
+{
   return (
     <div className="min-h-screen flex flex-col">
       {/* Nav bar */}
@@ -78,7 +79,7 @@ export default function Home() {
             href = "/resume"
           >
             <Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} />
-            Resume
+            Resume [Web]
             <Image aria-hidden src="/smiski.jpg" alt="Person icon" width={64} height={64} />
           </a>
 
@@ -94,7 +95,7 @@ export default function Home() {
           </a>
 
           <a
-            className="bg-pastel-sky p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
+            className="bg-pastel-pink p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
             href="https://www.linkedin.com/in/sanyakhattar/"
             target="_blank"
             rel="noopener noreferrer"
@@ -102,6 +103,15 @@ export default function Home() {
             <Image aria-hidden src="/globe.svg" alt="Globe icon" width={16} height={16} />
             Linkedin
             <Image aria-hidden src="/linkedinsmiski.jpg" alt="Several smiskis" width={64} height={64}/>
+          </a>
+
+          <a
+            className="bg-pastel-sky p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
+            href = "https://drive.google.com/file/d/1WfVluXDfzIx0eB_53rCLxDUo9G4s4CVj/view?usp=sharing"
+          >
+            <Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} />
+            Resume [PDF]
+            <Image aria-hidden src="/smiski.jpg" alt="Person icon" width={64} height={64} />
           </a>
         </div>
       </main>

@@ -62,7 +62,7 @@ export default function Connect() {
 
             <div className = "experience-container">
             <div className = "chrono-experience text-2xl">Meyer Sound Laboratories, Incorporated</div>
-                <div className = "exp-time text-1xl">May - December 2024</div>
+                <div className = "exp-time text-1xl">May 2024 - December 2024</div>
                 <div className = "role(s)">
                     <ol className = "list-inside list-decimal text-l/6 mb-6">
                         <li>Information Systems and Technology Intern</li>
@@ -72,6 +72,25 @@ export default function Connect() {
             </div>
 
             <div className = "projects text-3xl font-semibold mb-4">Projects</div>
+
+            <div className = "project-container mb-4">
+              <div className = "project-1 text-2xl">Team Lead, Software Engineering Capstone (USC CSCI 401)</div>
+              <div className = "exp-time text-1xl">January 2026 - May 2026</div>
+            </div>
+
+            <div className = "project-container mb-4">
+              <div className = "project-2 text-2xl">Founding Engineer and CTO, Wevae</div>
+              <div className = "exp-time text-1xl">October 2025 - January 2026</div>
+            </div>
+
+            <div className = "project-container mb-4">
+              <div className = "project-3 text-2xl">Aura, a Music Therapist Chatbot</div>
+                <div className = "project-time text-1xl">June 2023 - July 2023</div>
+                <div className = "description text-1xl">
+                  Prompt engineered and deployed a music therapist chatbot on poe.com with GPT-3 through numerous phases of prompt refinery.
+                  Designed with the intent to normalize mental health conversations, and decrease logistical + socioeconomic barriers to support.
+                </div>
+            </div>
             
         </main>   
     </div>
