@@ -24,7 +24,7 @@ export default function Connect() {
                         <NavigationMenuTrigger>navbar</NavigationMenuTrigger>
                         <NavigationMenuContent>
                           <NavigationMenuItem>
-                            <NavigationMenuLink href = "/experience">experience</NavigationMenuLink>
+                            <NavigationMenuLink href = "/portfolio">portfolio</NavigationMenuLink>
                           </NavigationMenuItem>
                           <NavigationMenuItem>
                             <NavigationMenuLink href = "/connect">connect!</NavigationMenuLink>
@@ -48,6 +48,16 @@ export default function Connect() {
             <h1 className = "text-4xl font-bold mb-4">Resume</h1>
 
             <div className = "experience text-3xl font-semibold mb-4">Experience</div>
+
+            <div className = "experience-container">
+                <div className = "chrono-experience text-2xl">Rolling Robots Incorporated</div>
+                    <div className = "exp-time text-1xl">June 2026 - July 2026</div>
+                    <div className = "role(s)">
+                        <ol className = "list-inside list-decimal text-l/6 mb-6">
+                            <li>Lead STEM Instructor for Summer Camps</li>
+                        </ol>
+                    </div>
+            </div>
 
             <div className = "experience-container">
                 <div className = "chrono-experience text-2xl">USC Interaction Lab</div>
@@ -76,12 +86,23 @@ export default function Connect() {
             <div className = "project-container mb-4">
               <div className = "project-1 text-2xl">Team Lead, Software Engineering Capstone (USC CSCI 401)</div>
               <div className = "exp-time text-1xl">January 2026 - May 2026</div>
+              <div className = "description text-1xl">
+                I've always enjoyed taking a high-level, overhead approach to technical projects, and my Software Capstone course (CSCI 401)
+                at USC was no different. Throughout the course, we completed end-to-end features for a stakeholder's existing iOS application, 
+                and I oversaw communication between the student team and the stakeholder, from documentation to deliverables.
+              </div>
             </div>
 
             <div className = "project-container mb-4">
               <div className = "project-2 text-2xl">Founding Engineer and CTO, Wevae</div>
               <div className = "exp-time text-1xl">October 2025 - January 2026</div>
+               <div className = "description text-1xl">
+                  As the sole engineer and CTO of Wevae, I bridged the gaps between technical execution and business vision for Wevae.
+                  Wevae was designed for young adults to stay connected with their friends through life transitions and physical location changes
+                  via social networking and circles personalized to where you are, whenever.
+                </div>
             </div>
+
 
             <div className = "project-container mb-4">
               <div className = "project-3 text-2xl">Aura, a Music Therapist Chatbot</div>

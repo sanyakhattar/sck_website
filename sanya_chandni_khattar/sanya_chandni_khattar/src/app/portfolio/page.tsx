@@ -12,7 +12,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
-export default function Experience() {
+export default function Portfolio() {
   return (
     <div className = "min-h-screen flex flex-col">
        {/* Nav bar */}
@@ -24,7 +24,7 @@ export default function Experience() {
                       <NavigationMenuTrigger>navbar</NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <NavigationMenuItem>
-                          <NavigationMenuLink href = "/experience">experience</NavigationMenuLink>
+                          <NavigationMenuLink href = "/portfolio">portfolio</NavigationMenuLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                           <NavigationMenuLink href = "/connect">connect!</NavigationMenuLink>
@@ -45,29 +45,23 @@ export default function Experience() {
 
         {/* Centered main content */}
         <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-8">
-        <h1 className = "text-3xl font-bold mb-4">Experience</h1>
+        <h1 className = "text-3xl font-bold mb-4">Portfolio</h1>
 
         <div className = "bg-amber-200 p-4 space-y-2 m-8 rounded-xl">
-          <h2 className = "text-2xl font-bold mb-4">Industry Experience</h2>
+          <h2 className = "text-2xl font-bold mb-4">Music</h2>
           <ol className = "font-mono list-inside list-decimal text-sm/6 mb-10">
-            <li>R&D Intern @ Meyer Sound Laboratories Incorporated</li>
-            <li>IT Intern @ Meyer Sound Laboratories Incorporated</li>
-            <li>Fullstack Developer, Undergrad Research Assistant @ USC Interaction Lab</li>
           </ol>
         </div>
 
         <div className = "bg-amber-300 p-4 space-y-2 m-8 rounded-xl">
-          <h2 className = "text-2xl font-bold mb-4">Customer Service Experience</h2>
+          <h2 className = "text-2xl font-bold mb-4">Web Development</h2>
           <ol className = "font-mono list-inside list-decimal text-sm/6 mb-10">
-            <li>Barista @ Nordstrom eBar</li>
           </ol>
         </div>
 
         <div className = "bg-amber-400 p-4 space-y-2 m-8 rounded-xl">
-          <h2 className = "text-2xl font-bold mb-4">Leadership</h2>
+          <h2 className = "text-2xl font-bold mb-4">App Development</h2>
           <ol className = "font-mono list-inside list-decimal text-sm/6 mb-10">
-            <li>Software Engineering Capstone Team Lead</li>
-            <li>HackSC Hacker Experience Team Lead</li>
           </ol>
         </div>
         </main>

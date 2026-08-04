@@ -30,7 +30,7 @@ export default function Home()
                 <NavigationMenuTrigger>navbar</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <NavigationMenuItem>
-                    <NavigationMenuLink href = "/experience">experience</NavigationMenuLink>
+                    <NavigationMenuLink href = "/portfolio">portfolio</NavigationMenuLink>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
                     <NavigationMenuLink href = "/connect">connect!</NavigationMenuLink>
@@ -51,26 +51,14 @@ export default function Home()
 
       {/* Centered main content */}
       <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-8">
-        <h1 className="text-3xl font-bold mb-4">About</h1>
+        <h1 className="text-4xl font-bold mb-4">Sanya Chandni Khattar</h1>
+        <h2 className="text-2xl font-semibold mb-4">A problem-solver and artist driven by human-centric approaches to engineering.</h2>
 
-        <div className="space-y-2 mb-8">
-          <p>Hi! I&apos;m Sanya.</p>
-          <p>I&apos;m currently a second-semester senior studying Computer Science at the <u>University of Southern California</u>.</p>
+        <div className="blurb space-y-2 mb-8">
+          <p>Hi! I&apos;m Sanya, a final-semester senior studying <u>Computer Science</u> at the University of Southern California.</p>
           <p>My favorite classes have been: <span title="CSCI 353/EE 450" className="underline decoration-dotted cursor-help">Computer Networks</span>, <span title="CSCI 356" className="underline decoration-dotted cursor-help">Computer Systems</span>, and my technical elective for <span title="TAC 435" className="underline decoration-dotted cursor-help">Professional C++</span>.</p>
-          <p>When I&apos;m not building through programming, you can find me making music, playing with my pets, reading, or outdoors!</p>
+          <p>When I&apos;m not building, I create music, take care of my pets, read, or go outdoors!</p>
         </div>
-
-        <ol className="font-mono list-inside list-decimal text-sm/6 mb-10">
-          <li className="mb-2 tracking-[-.01em]">
-            Current working directory:{" "}
-            <code className="bg-black/5 dark:bg-white/6 font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-          </li>
-          <li className="tracking-[-.01em]">
-            In progress by: Sanya Chandni Khattar, USC CSCI &apos;26.
-          </li>
-        </ol>
 
         {/* Responsive card grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
