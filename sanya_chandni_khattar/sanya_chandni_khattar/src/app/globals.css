@@ -4,6 +4,80 @@
 
 @custom-variant light (&:is(.dark *));
 
+@layer utilities {
+  .star-layer {
+    will-change: transform;
+    animation: star-drift linear infinite;
+  }
+  .star-twinkle {
+    animation:
+      star-drift linear infinite,
+      twinkle 6s ease-in-out infinite alternate;
+  }
+  .galaxy-band {
+    will-change: transform, opacity;
+    animation: band-breathe 40s ease-in-out infinite alternate;
+  }
+
+  .meteor {
+    height: 1.5px;
+    transform-origin: right center;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(180, 210, 255, 0.35),
+      rgba(255, 255, 255, 0.9)
+    );
+    will-change: transform, opacity;
+    animation: meteor-shoot linear infinite;
+  }
+
+    /* The bright head at the leading edge */
+  .meteor::after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    width: 3px;
+    height: 3px;
+    border-radius: 9999px;
+    background: white;
+    transform: translateY(-50%);
+    box-shadow: 0 0 6px 2px rgba(200, 224, 255, 0.75);
+  }
+}
+
+@keyframes star-drift {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-4%, 3%, 0); }
+}
+
+@keyframes twinkle {
+  from { opacity: 0.75; }
+  to   { opacity: 1; }
+}
+
+@keyframes band-breathe {
+  from { transform: rotate(-24deg) scale(1); opacity: 0.6; }
+  to   { transform: rotate(-21deg) scale(1.08); opacity: 0.8; }
+}
+
+@keyframes meteor-shoot {
+  0%   { transform: rotate(var(--angle)) translate3d(0, 0, 0); opacity: 0; }
+  1.5% { opacity: 1; }
+  9%   { opacity: 1; }
+  13%  { transform: rotate(var(--angle)) translate3d(115vmax, 0, 0); opacity: 0; }
+  100% { transform: rotate(var(--angle)) translate3d(115vmax, 0, 0); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star-layer,
+  .star-twinkle,
+  .galaxy-band {
+    animation: none;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -59,15 +133,15 @@
   --radius: 0.75rem;
 
   /* Warm cream/beige background inspired by the reference */
-  --background: oklch(0.96 0.015 85);        /* warm cream */
-  --foreground: oklch(0.25 0.02 55);          /* dark warm brown */
+  --foreground: oklch(0.96 0.015 85);        /* warm cream */
+  --backround: oklch(0.25 0.02 55);          /* dark warm brown */
 
   /* Cards: slightly lighter cream */
-  --card: oklch(0.97 0.012 90);              /* light warm white */
-  --card-foreground: oklch(0.25 0.02 55);
+  --card-foreground: oklch(0.97 0.012 90);              /* light warm white */
+  --card: oklch(0.25 0.02 55);
 
-  --popover: oklch(0.97 0.012 90);
-  --popover-foreground: oklch(0.25 0.02 55);
+  --popover-foreground: oklch(0.97 0.012 90);
+  --popover: oklch(0.25 0.02 55);
 
   /* Primary: warm dark brown */
   --primary: oklch(0.30 0.03 55);
@@ -143,12 +217,3 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.553 0.013 58.071);
 }
-
-/*@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}*/

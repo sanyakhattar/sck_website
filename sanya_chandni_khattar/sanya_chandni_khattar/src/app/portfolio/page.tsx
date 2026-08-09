@@ -10,11 +10,12 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
+} from "@/components/navigation-menu"
 
-export default function Portfolio() {
+export default function Portfolio() 
+{
   return (
-    <div className = "min-h-screen flex flex-col">
+    <div className = "min-h-svh flex flex-col text-foreground">
        {/* Nav bar */}
             <nav className="w-full border-b border-border px-4 py-3 sm:px-8">
               <div className="mx-auto max-w-5xl flex items-center justify-between">
@@ -34,7 +35,7 @@ export default function Portfolio() {
                   </NavigationMenuList>
                 </NavigationMenu>
                 <a
-                  href="/"
+                  href="/home"
                   className="rounded-lg p-2 text-foreground/70 transition-colors hover:bg-accent hover:text-foreground"
                   aria-label="Home"
                 >
@@ -45,21 +46,21 @@ export default function Portfolio() {
 
         {/* Centered main content */}
         <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-8">
-        <h1 className = "text-3xl font-bold mb-4">Portfolio</h1>
+        <h1 className = "text-3xl font-bold mb-3">Portfolio</h1>
 
-        <div className = "bg-amber-200 p-4 space-y-2 m-8 rounded-xl">
+        <div className = "p-4 space-y-2 m-8 rounded-xl">
           <h2 className = "text-2xl font-bold mb-4">Music</h2>
           <ol className = "font-mono list-inside list-decimal text-sm/6 mb-10">
           </ol>
         </div>
 
-        <div className = "bg-amber-300 p-4 space-y-2 m-8 rounded-xl">
+        <div className = "p-4 space-y-2 m-8 rounded-xl">
           <h2 className = "text-2xl font-bold mb-4">Web Development</h2>
           <ol className = "font-mono list-inside list-decimal text-sm/6 mb-10">
           </ol>
         </div>
 
-        <div className = "bg-amber-400 p-4 space-y-2 m-8 rounded-xl">
+        <div className = "p-4 space-y-2 m-8 rounded-xl">
           <h2 className = "text-2xl font-bold mb-4">App Development</h2>
           <ol className = "font-mono list-inside list-decimal text-sm/6 mb-10">
           </ol>

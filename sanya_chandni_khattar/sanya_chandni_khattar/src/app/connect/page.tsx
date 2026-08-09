@@ -10,11 +10,11 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
+} from "@/components/navigation-menu"
 
 export default function Connect() {
   return (
-    <div className = "min-h-screen flex flex-col">
+    <div className = "min-h-screen flex flex-col text-white">
         {/* Nav bar */}
               <nav className="w-full border-b border-border px-4 py-3 sm:px-8">
                 <div className="mx-auto max-w-5xl flex items-center justify-between">
@@ -23,18 +23,25 @@ export default function Connect() {
                       <NavigationMenuItem>
                         <NavigationMenuTrigger>navbar</NavigationMenuTrigger>
                         <NavigationMenuContent>
+                          
                           <NavigationMenuItem>
-                            <NavigationMenuLink href = "/experience">experience</NavigationMenuLink>
+                            <NavigationMenuLink href = "/home">home</NavigationMenuLink>
                           </NavigationMenuItem>
+
                           <NavigationMenuItem>
-                            <NavigationMenuLink href = "/connect">connect!</NavigationMenuLink>
+                            <NavigationMenuLink href = "/portfolio">portfolio</NavigationMenuLink>
                           </NavigationMenuItem>
+                          
+                          <NavigationMenuItem>
+                            <NavigationMenuLink href = "/connect">connect</NavigationMenuLink>
+                          </NavigationMenuItem>
+
                         </NavigationMenuContent>
                       </NavigationMenuItem>
                     </NavigationMenuList>
                   </NavigationMenu>
                   <a
-                    href="/"
+                    href="/home"
                     className="rounded-lg p-2 text-foreground/70 transition-colors hover:bg-accent hover:text-foreground"
                     aria-label="Home"
                   >
@@ -45,10 +52,10 @@ export default function Connect() {
     
     {/* Centered main content */}     
         <main className = "mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-8 mt-45">
-            <h1 className = "text-3xl font-bold mb-4">Connect!</h1>
+            <h1 className = "text-3xl font-bold mb-4">Connect</h1>
               <div className="grid grid-rows-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   <a
-                    className="bg-pastel-lavender p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
+                    className="foreground-45 border border-white p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
                     href="mailto:sanyakhattar7@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -57,7 +64,7 @@ export default function Connect() {
                   </a>
         
                   <a
-                    className="bg-pastel-yellow p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
+                    className="foreground-45 border border-white p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
                     href="mailto:sckhatta@usc.edu"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -66,21 +73,21 @@ export default function Connect() {
                   </a>
 
                   <a 
-                    className = "bg-pastel-green p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
+                    className = "foreground-45 border border-white p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
                     href = "https://github.com/sanyachkh"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    University GitHub (most used)
+                    Academic Email GitHub
                   </a>
 
                   <a
-                    className="bg-pastel-pink p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
+                    className="foreground-45 border border-white p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
                     href="https://github.com/sanyakhattar"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Personal GitHub (work in progress)
+                    Main Email GitHub
                   </a>
               </div>
     </main>   

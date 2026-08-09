@@ -10,31 +10,38 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
+} from "@/components/navigation-menu"
 
 export default function Connect() {
   return (
-    <div className = "min-h-screen flex flex-col">
+    <div className = "flex flex-col text-white">
         {/* Nav bar */}
-              <nav className="w-full border-b border-border px-4 py-3 sm:px-8">
+              <nav className="w-full border-b px-4 py-3 sm:px-8">
                 <div className="mx-auto max-w-5xl flex items-center justify-between">
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem>
                         <NavigationMenuTrigger>navbar</NavigationMenuTrigger>
                         <NavigationMenuContent>
+
+                          <NavigationMenuItem>
+                            <NavigationMenuLink href = "/home">home</NavigationMenuLink>
+                          </NavigationMenuItem>
+
                           <NavigationMenuItem>
                             <NavigationMenuLink href = "/portfolio">portfolio</NavigationMenuLink>
                           </NavigationMenuItem>
+
                           <NavigationMenuItem>
-                            <NavigationMenuLink href = "/connect">connect!</NavigationMenuLink>
+                            <NavigationMenuLink href = "/connect">connect</NavigationMenuLink>
                           </NavigationMenuItem>
+
                         </NavigationMenuContent>
                       </NavigationMenuItem>
                     </NavigationMenuList>
                   </NavigationMenu>
                   <a
-                    href="/"
+                    href="/home"
                     className="rounded-lg p-2 text-foreground/70 transition-colors hover:bg-accent hover:text-foreground"
                     aria-label="Home"
                   >
@@ -44,7 +51,7 @@ export default function Connect() {
               </nav>
     
     {/* Centered main content */}     
-        <main className = "mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-8">
+        <main className = "mx-auto flex-1 px-4 py-10 sm:px-8">
             <h1 className = "text-4xl font-bold mb-4">Resume</h1>
 
             <div className = "experience text-3xl font-semibold mb-4">Experience</div>
