@@ -35,7 +35,7 @@ export default function Home()
             </NavigationMenuList>
           </NavigationMenu>
           <a
-            href="/home"
+            href="/"
             className="rounded-lg p-2 text-foreground/70 transition-colors hover:bg-accent hover:text-foreground"
             aria-label="Home"
           >

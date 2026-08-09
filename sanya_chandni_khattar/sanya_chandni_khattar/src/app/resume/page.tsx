@@ -25,7 +25,7 @@ export default function Connect() {
                         <NavigationMenuContent>
 
                           <NavigationMenuItem>
-                            <NavigationMenuLink href = "/home">home</NavigationMenuLink>
+                            <NavigationMenuLink href = "/">home</NavigationMenuLink>
                           </NavigationMenuItem>
 
                           <NavigationMenuItem>
@@ -41,7 +41,7 @@ export default function Connect() {
                     </NavigationMenuList>
                   </NavigationMenu>
                   <a
-                    href="/home"
+                    href="/"
                     className="rounded-lg p-2 text-foreground/70 transition-colors hover:bg-accent hover:text-foreground"
                     aria-label="Home"
                   >

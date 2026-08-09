@@ -24,18 +24,25 @@ export default function Portfolio()
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>navbar</NavigationMenuTrigger>
                       <NavigationMenuContent>
+
+                        <NavigationMenuItem>
+                          <NavigationMenuLink href = "/">home</NavigationMenuLink>
+                        </NavigationMenuItem>
+
                         <NavigationMenuItem>
                           <NavigationMenuLink href = "/portfolio">portfolio</NavigationMenuLink>
                         </NavigationMenuItem>
+
                         <NavigationMenuItem>
                           <NavigationMenuLink href = "/connect">connect!</NavigationMenuLink>
                         </NavigationMenuItem>
+
                       </NavigationMenuContent>
                     </NavigationMenuItem>
                   </NavigationMenuList>
                 </NavigationMenu>
                 <a
-                  href="/home"
+                  href="/"
                   className="rounded-lg p-2 text-foreground/70 transition-colors hover:bg-accent hover:text-foreground"
                   aria-label="Home"
                 >
