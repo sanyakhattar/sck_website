@@ -60,7 +60,7 @@ export default function Home()
         {/* Responsive card grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <a
-            className="group border border-white/10 bg-white/5 backdrop-blur-xl p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
+            className="group flex items-center gap-3 rounded-xl border border-white/10 bg-slate-900/60 p-4 transition-colors hover:bg-slate-900/75 sm:p-5"
             href = "/resume"
           >
             <Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} className="shrink-0"/>
@@ -69,7 +69,7 @@ export default function Home()
           </a>
 
           <a
-            className="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:opacity-80 transition-opacity"
+            className="group flex items-center gap-3 rounded-xl border border-white/10 bg-slate-900/60 p-4 transition-colors hover:bg-slate-900/75 sm:p-5"
             href="https://github.com/sanyachkh"
             target="_blank"
             rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export default function Home()
           </a>
 
           <a
-            className="group border border-white/10 bg-white/5 backdrop-blur-xl p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
+            className="group flex items-center gap-3 rounded-xl border border-white/10 bg-slate-900/60 p-4 transition-colors hover:bg-slate-900/75 sm:p-5"
             href="https://www.linkedin.com/in/sanyakhattar/"
             target="_blank"
             rel="noopener noreferrer"
@@ -91,7 +91,7 @@ export default function Home()
           </a>
 
           <a
-            className="group border border-white/10 bg-white/5 backdrop-blur-xl p-5 rounded-xl flex items-center gap-3 hover:opacity-80 transition-opacity"
+            className="group flex items-center gap-3 rounded-xl border border-white/10 bg-slate-900/60 p-4 transition-colors hover:bg-slate-900/75 sm:p-5"
             href = "https://drive.google.com/file/d/1WfVluXDfzIx0eB_53rCLxDUo9G4s4CVj/view?usp=sharing"
           >
             <Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} className = "shrink-0"/>

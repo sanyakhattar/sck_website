@@ -1,6 +1,7 @@
 //import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { GalaxyBackground } from "@/components/galaxy_background";
+import { GalaxyBackground } from "@/components/meteors";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,7 +21,7 @@ export default function RootLayout({children,}: Readonly<{  children: React.Reac
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       <GalaxyBackground/>
+        <GalaxyBackground />
         {children}
       </body>
     </html>
